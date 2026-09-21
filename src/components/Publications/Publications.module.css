@@ -1,0 +1,33 @@
+.scholarLink {
+  color: var(--color-accent);
+  border-bottom: 1px solid var(--color-accent);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.item {
+  padding: 18px 20px;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  background: var(--color-bg-card);
+}
+
+.title {
+  font-weight: 600;
+  font-size: 0.98rem;
+  line-height: 1.5;
+}
+
+.title:hover {
+  color: var(--color-accent);
+}
+
+.meta {
+  margin-top: 8px;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}

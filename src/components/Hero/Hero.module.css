@@ -1,0 +1,96 @@
+.hero {
+  padding: 96px 0 64px;
+}
+
+.location {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  margin-bottom: 20px;
+}
+
+.name {
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.title {
+  margin-top: 14px;
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  font-weight: 600;
+  color: var(--color-text-muted);
+}
+
+.tagline {
+  margin-top: 8px;
+  font-size: 1rem;
+  color: var(--color-accent);
+  font-weight: 500;
+}
+
+.bio {
+  margin-top: 24px;
+  max-width: 620px;
+  line-height: 1.7;
+  color: var(--color-text-muted);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  margin-top: 36px;
+}
+
+.primaryLink {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 22px;
+  border-radius: 10px;
+  background: linear-gradient(120deg, var(--color-accent), var(--color-accent-2));
+  color: var(--color-accent-contrast);
+  font-weight: 600;
+  transition: transform 0.15s ease;
+}
+
+.primaryLink:hover {
+  transform: translateY(-2px);
+}
+
+.secondaryLink {
+  color: var(--color-text-muted);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.9rem;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 2px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.secondaryLink:hover {
+  color: var(--color-text);
+  border-color: var(--color-accent);
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 32px;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+.socials a {
+  transition: color 0.15s ease;
+}
+
+.socials a:hover {
+  color: var(--color-accent);
+}
+
+.dot {
+  opacity: 0.5;
+}
