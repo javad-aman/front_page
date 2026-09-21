@@ -1,4 +1,5 @@
 import type { Project } from '../../data/types'
+import { ProjectIllustration } from './ProjectThumbnails'
 import styles from './Projects.module.css'
 
 export default function ProjectCard({ project }: { project: Project }) {
@@ -8,9 +9,9 @@ export default function ProjectCard({ project }: { project: Project }) {
         {project.image ? (
           <img src={project.image} alt={project.title} />
         ) : (
-          <span className={styles.thumbFallback} aria-hidden="true">
-            {project.title.charAt(0)}
-          </span>
+          <div className={styles.thumbIllustration}>
+            <ProjectIllustration projectId={project.id} />
+          </div>
         )}
       </div>
 
